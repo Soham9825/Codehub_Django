@@ -4,6 +4,17 @@ A Django-based programming problem-solving platform that integrates with **Judge
 This project uses **MySQL** as the database and environment variables for configuration.
 
 ---
+## 📸 App Screenshot
+
+### 1️⃣ Home Page
+![Home Page](assets/ss1.png)
+
+### 2️⃣ Problem List
+![Problem List](assets/ss2.png)
+
+### 3️⃣ Question Page
+![Question Page](assets/ss3.png)
+
 
 ## 🚀 Features
 - User can submit solutions to programming problems.
