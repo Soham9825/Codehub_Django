@@ -1,0 +1,29 @@
+# Python bytecode
+*.py[cod]
+__pycache__/
+
+# Virtual environments
+.venv/
+
+
+# Environment config
+.env
+
+# Django collected static files
+staticfiles/
+
+# Media files (only if using file uploads)
+media/
+
+# VS Code settings
+.vscode/
+
+# Python build artifacts
+*.egg-info/
+dist/
+build/
+
+# Ignore Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
