@@ -36,3 +36,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 4000);
     }
 });
+
+const textarea = document.getElementById("editor");
+const lineNumbers = document.getElementById("lineNumbers");
+
+function updateLineNumbers() {
+  const lines = textarea.value.split('\n').length;
+  let numbers = '';
+  for (let i = 1; i <= lines; i++) {
+    numbers += i + '\n';
+  }
+  lineNumbers.textContent = numbers;
+}
+
+// Initial
+updateLineNumbers();
+
+// Update on input
+textarea.addEventListener('input', updateLineNumbers);
+
+// Sync scroll
+textarea.addEventListener('scroll', () => {
+  lineNumbers.scrollTop = textarea.scrollTop;
+});

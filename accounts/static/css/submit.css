@@ -185,6 +185,43 @@ header {
 }
 
 
+.editor-container {
+  display: flex;
+  width: 600px;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.line-numbers {
+  background: #f0f0f0;
+  color: #888;
+  padding: 8px 4px;
+  text-align: right;
+  user-select: none;
+  line-height: 1.4em;
+  white-space: pre;
+  overflow: hidden;
+}
+
+.code-editor {
+  flex: 1;
+  padding: 8px;
+  margin-top: 0px;
+  border: none;
+  resize: none;
+  outline: none;
+  line-height: 1.4em;
+  font-family: monospace;
+  font-size: 14px;
+  overflow: auto;
+}
+
+
+
 @media (max-width: 900px) {
   .main-container {
     flex-direction: column;
